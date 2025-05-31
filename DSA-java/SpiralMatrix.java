@@ -1,4 +1,4 @@
-import java.util.*;
+
 // important question for placements prospective
 public class SpiralMatrix {
     public static void printSpiral(int matrix[][]) {

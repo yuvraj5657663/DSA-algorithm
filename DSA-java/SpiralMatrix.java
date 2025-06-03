@@ -1,5 +1,5 @@
-
-// important question for placements prospective
+import java.util.*;
+// important question for placement prospective
 public class SpiralMatrix {
     public static void printSpiral(int matrix[][]) {
         int startRow = 0;

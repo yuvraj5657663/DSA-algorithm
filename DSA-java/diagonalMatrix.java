@@ -1,4 +1,4 @@
-import java.util.*;
+
 
 public class diagonalMatrix {
     public static int DiagonalSum(int matrix[][]) {

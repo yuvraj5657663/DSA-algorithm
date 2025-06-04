@@ -1,4 +1,4 @@
-import java.util.*;
+package shorting;
 
 public class BubbleSort {
     public static void main(String[] args) {

@@ -59,7 +59,7 @@ class SavingsAccount extends Account implements BankOperations, Runnable {
 
     @Override
     public void run() {
-        // Simulate auto-deposit or usage
+        
         try {
             deposit(1000);
             Thread.sleep(2000);
@@ -70,7 +70,7 @@ class SavingsAccount extends Account implements BankOperations, Runnable {
     }
 }
 
-// Main GUI Application
+
 public class BankAppGUI {
     public static void main(String[] args) {
         JFrame frame = new JFrame(" Bank Account System");
@@ -131,7 +131,7 @@ public class BankAppGUI {
         balanceBtn.setBounds(140, 220, 150, 25);
         frame.add(balanceBtn);
 
-        // Thread-safe reference
+       
         final SavingsAccount[] account = new SavingsAccount[1];
 
         createBtn.addActionListener(e -> {
@@ -139,10 +139,10 @@ public class BankAppGUI {
             int accNo = Integer.parseInt(accField.getText());
             double balance = Double.parseDouble(balField.getText());
             account[0] = new SavingsAccount(name, accNo, balance, output);
-            output.setText(""); // Clear
+            output.setText("");
             account[0].accountDetails();
 
-            // Start background thread
+            
             new Thread(account[0]).start();
         });
 
